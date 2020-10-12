@@ -1,0 +1,25 @@
+@media(max-width: 720px){
+	.footer-menu{
+		margin-top: 5rem;
+		margin-bottom: 7rem;
+		flex-direction: column;
+		align-items: center;
+		li{
+			margin-top: 1rem;
+			margin-bottom: 1rem;	
+		}
+	} 
+
+	.footer-bottom{
+		.footer-copyright{
+			text-align: center;
+		}
+		.soc-menu .soc-links{
+			justify-content: space-around;
+		}
+		.soc-links li a .icon {
+			width: 2.5rem;
+			height: 2.5rem;
+		}
+	}
+}

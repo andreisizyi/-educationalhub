@@ -1,0 +1,205 @@
+@media(max-width: 768px){
+	h1, .like-h1, h2, .like-h2{
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+
+	.anchor-menu{
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.section-pd{
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+
+	.row-texts{
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.row-mg-lg{
+		margin-left: -1.5rem;
+		margin-right: -1.5rem;
+		.col-6{
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+		}
+	}
+	
+	.counter-item{
+		.counter-value{
+			font-size: 5rem;
+		}
+		.caption{
+			max-width: 95%;
+		}
+	}
+
+	.card-thin{
+		height: 34rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+
+	.card-fw{
+		flex-direction: column;
+		flex-wrap: nowrap;
+		height: auto;
+		.card-preloader{
+			width: 100%;
+			height: 28rem;
+		}
+		.card-content{
+			width: 100%;
+			margin-left: 0;
+			h2{
+				a{
+					max-height: 5.4rem;
+				}
+			}
+			.btn-tr{
+				position: static;
+				margin-top: 1rem;
+			}
+		}
+	}
+	
+	.section-multiple-videos{
+		padding-top: 5rem;
+		.desc-text{
+			margin-bottom: 3rem;
+		}
+	}
+
+	.video-carousel{
+		margin-top: 4rem;
+		margin-left: -1rem;
+	}
+
+	.test-block{
+		padding-left: 0;
+		padding-right: 0;
+		.btn{
+			text-align: center;	
+			margin: auto;
+			display: block;
+			padding: 2rem 5rem;
+		}
+	}
+
+	.answers-block{
+		margin-bottom: 5rem;
+	}
+
+	.card-news{
+		padding: 1.5rem 1.5rem 2rem;
+		height: 38rem;
+		.card-img {
+    		height: 21rem;
+		}
+		.card-title{
+			margin-top: 1rem;
+		}
+	}
+
+	.news-main-image{
+		height: 48rem;
+	}
+
+	.blog-content {
+		margin-top: 4rem;
+		margin-bottom: 10rem;
+		img{
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+		}
+	}
+
+	.btns-add{
+		.btn{
+			margin-left: 1rem;
+		}
+	}
+
+	.sticky-menu{
+		display: none;
+	}
+
+	.data-block{
+		max-width: 100%;
+	}
+
+	.list-border {
+		margin-top: 3rem;
+    	padding: 2rem 3rem;
+    }
+
+    .line-block-item {
+		&:not(:last-child){
+			margin-bottom: 5rem;
+		}
+		&:not(:first-child){
+			margin-top: 5rem;
+		}
+	}
+
+	.card-square-amount .btn{
+		margin-top: 3rem;
+	}
+
+	.card-square-amount{
+		margin-top: 4rem;
+	}
+
+	.card-square{
+		height: 40rem;
+		&.special-card{
+			height: auto;
+			.card-square-sp{
+				position: relative;
+				ul{
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	.card-square-title .like-h3{
+		font-size: 2.4rem;
+	}
+
+	.card-square-date{
+		top: 3rem;
+		right: 4rem;
+		.day{
+			font-size: 5rem;
+		}
+	}
+
+	.card-full-light{
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		height: 35rem;
+		.card-full-light-title{
+			left: 2.4rem;
+			right: 2.4rem;
+			bottom: 4rem;
+			h3{
+				margin-top: 1rem;
+			}
+		}
+	}
+
+	.slider.partners-slider {
+		margin-top: 3rem;
+		margin-bottom: 5rem;
+	}
+
+	.slick-dots {
+	    bottom: -4rem;
+	}
+
+}

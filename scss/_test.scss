@@ -1,0 +1,71 @@
+.empty-page-title{
+	padding-top: 6rem!important;
+	padding-bottom: 7rem!important;
+	background-color: $primary;
+}
+
+.success-status{
+	display: flex;
+	align-items: center;
+	margin-bottom: 3rem;
+	.btn-close{
+		width: 2.5rem;
+		height: 2.5rem;
+		margin-right: 2.5rem;
+		.icon{
+			width: 1.5rem;
+			height: 1.5rem;
+			fill: $grey;
+		}
+	}
+	.success-line{
+		width: calc(100% - 5rem);
+		height: .4rem;
+		background-color: #E2E2E2;
+		border-radius: 1rem;
+	}
+}
+
+.test-block{
+	padding-left: 5rem;
+	padding-right: 15.5rem;
+}
+
+
+.title-with-info{
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+	display: flex;
+	align-items: flex-start;
+	.info{
+		margin-left: 2rem;
+		.icon{
+			margin-top: 2rem;
+			width: 2.5rem;
+			height: 2.5rem;
+			fill: $secondary;
+		}
+	}
+}
+
+.answers-block{
+	margin-top: 5rem;
+	margin-bottom: 8rem;
+}
+
+.answer{
+	cursor: pointer;
+	display: flex;
+	align-items: stretch;
+	padding: 1.6rem 2rem;
+	border: 5px solid $secondary;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	span{
+		font-weight: $extraBold;
+		color: $secondary;
+	}
+	.value{
+		margin-left: 2rem;
+	}
+}

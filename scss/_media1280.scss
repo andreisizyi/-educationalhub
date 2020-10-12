@@ -1,0 +1,98 @@
+@media(max-width: 1280px){
+	h1, .like-h1{
+		font-size: 5rem;
+	}
+
+	h2, .like-h2{
+		font-size: 4rem;
+	}
+
+	h3, .like-h3{
+		font-size: 3rem;
+	}
+
+	h4, .like-h4{
+		font-size: 2rem;
+	}
+
+	.footer .logo img{
+		width: 22rem;
+	}
+
+	.footer-menu li{
+		margin-left: 4rem;
+		margin-right: 4rem;
+		a{
+			font-size: 3rem;
+		}
+	}
+
+	.card-title{
+		max-height: 8.2rem;
+	}
+
+	.row-md-lg{
+		margin-left: -3rem;
+		margin-right: -3rem;
+		.col-6{
+			padding-left: 3rem;
+			padding-right: 3rem;
+		}
+	}
+
+	.card-thin{
+		padding-left: 5rem;
+		padding-right: 5rem;
+		height: 20rem;
+	}
+
+	.card-thin-row {
+		position: relative;
+		margin-bottom: 9rem;
+	}
+
+	.line-row{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 5;
+	}
+
+	.card-thin{
+		margin-left: 4rem;
+		margin-right: 0;
+		padding-left: 7rem;
+		&::before{
+			z-index: 3;
+		}
+	}
+
+	.card-type .round{
+		border-width: 3px;
+		border-color: #fff;
+	}
+
+	.page-title-expand .btn-expand{
+		margin-top: 5rem;
+	}
+
+	.card-video{
+		width: 40rem!important;
+		height: 37.5rem;
+		padding: 1.5rem;
+		margin-top: 2rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		.like-h5{
+			margin-top: 2rem;
+		}
+		.video-placeholder{
+			height: 22rem;
+		}
+	}
+
+	.list-border{
+		padding: 3rem 4rem;
+	}
+
+}

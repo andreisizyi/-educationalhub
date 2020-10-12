@@ -1,0 +1,150 @@
+@media(max-width: 960px){
+	.footer .logo img{
+		width: 18rem;
+	}
+
+	.footer-menu{
+		margin-top: 4rem;
+		margin-bottom: 5rem;
+		justify-content: space-around;
+		li{
+			margin-left: 2rem;
+			margin-right: 2rem;
+			a{
+				font-size: 2.8rem;
+			}
+		}
+	}
+	.footer-copyright{
+		font-size: 1.2rem;
+	}
+
+
+	.page-title{
+		padding-top: 14rem;
+		padding-bottom: 8rem;
+	}
+
+	.page-title-expand{
+		padding-bottom: 5rem;
+	}
+
+	.page-title-bottom{
+		padding-bottom: 30rem;
+	}
+
+	.page-title-bottom-md{
+		padding-bottom: 12rem;
+	}
+
+	.desc-item{
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+
+	.card-fw{
+		padding: 2rem;
+		height: 28rem;
+		.card-content h2{
+			max-width: calc(100% - 16rem);
+		}
+		.card-preloader{
+			width: 35rem;
+			.btn-light-tr .icon{
+				width: 5rem;
+				height: 5rem;
+			}
+		}
+		.btn-play span{
+			font-size: 1.2rem;
+		}
+		.new-label{
+			padding: .2rem .5rem;
+		}
+		.card-content{
+			width: calc(100% - 38rem);
+		}
+	}
+
+	.video-section{
+		margin-top: -28rem;
+	}
+
+	.video-block .video-inner{
+		height: 44rem;
+	}
+
+	.video-desc{
+		padding-top: 3rem;
+		padding-bottom: 6rem;
+	}	
+
+	.video-desc h2, .video-desc h3, .video-desc h4, .video-desc h5{
+		margin-top: 3rem;
+	}
+
+	.person-page-title{
+		h1{
+			margin-top: 1rem;
+		}
+		
+		.person-img{
+			width: auto;
+			height: 30rem;
+		}
+	}
+
+	.card-news{
+		height: 44rem;
+		.card-img{
+			height: 24rem;
+		}
+	}
+
+	.label-text{
+		max-width: 100%;
+	}
+
+	.line-block-item{
+		.info-hover{
+			left: auto;
+			right: 0;
+			bottom: auto;
+			top: 100%;
+			transform: none;
+			&::before, &::after{
+				display: none;
+			}
+		}
+	}
+
+	.section-pd-lg{
+		padding-top: 15rem;
+		padding-bottom: 15rem;
+		.wrap-sm > .text{
+			margin-top: 4rem;
+		}
+	}
+
+	.to-video{
+		.play-btn{
+			min-width: auto;
+			.icon{
+				width: 5rem;
+				height: 5rem;
+			}
+		}
+		+ .buttons{
+			flex-wrap: wrap;
+			margin-top: 3rem;
+			margin-bottom: 4rem;
+			display: flex;
+			justify-content: center;
+			.btn{
+				margin-bottom: 1rem;
+			}
+		}
+	}
+
+}
+

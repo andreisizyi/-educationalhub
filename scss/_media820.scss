@@ -1,0 +1,19 @@
+@media(max-width: 820px){
+	.menu-buttons .btn-with-icon{
+		margin-right: 2rem;
+	}
+
+	.footer-bottom{
+		flex-direction: column-reverse;
+		.soc-menu{
+			margin-bottom: 3rem;
+			flex-direction: column;
+			.soc-links{
+				margin-top: 1rem;
+				margin-left: 0;
+			}
+		}
+	}
+
+	
+}

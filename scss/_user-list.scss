@@ -1,0 +1,194 @@
+.search-row{
+	margin-top: 7rem;
+	margin-bottom: 10rem;
+}
+
+.label-search{
+	width: 100%;
+	border: 5px solid #fff;
+	display: flex;
+	justify-content: space-between;
+	.input-text{
+		background-color: transparent;
+		border: none;
+		padding-left: 6rem;
+		width: 70%;
+		outline: none;
+		color: #fff;
+		font-size: 1.4rem;
+		letter-spacing: .2rem;
+		&::placeholder{
+			color: #fff;
+		}
+	}
+	.select{
+		width: 30%;
+		margin-left: auto;
+		border-right: 5px solid #fff;
+		padding-right: 1.5rem;
+		.select-inner{
+			letter-spacing: .2rem;
+			height: 8rem;
+			line-height: 8rem;
+			padding-top: 0;
+			padding-bottom: 0;
+			background-color: transparent;
+			border: none;
+			color: #fff;
+			text-align: right;
+			&::after{
+				background-image: url('../img/icons/down-arrow-light.svg');
+			}
+		}
+	}
+	.btn-light-tr{
+		min-width: 27rem;
+		border: none;
+	}
+}
+
+.btn-filter{
+	min-width: auto;
+	margin: auto;
+	display: block;
+	.icon{
+		width: 3.2rem;
+		height: 3.2rem;
+		stroke: #fff;
+	}
+}
+
+
+/*user card*/
+.cards-user-amount{
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.card-user{
+	border: 5px solid $secondary;
+	padding: 4rem 4.2rem;
+	margin-bottom: 2rem;
+}
+
+.card-user__img{
+	position: relative;
+	overflow: hidden;
+	width: 7rem;
+	height: 7rem;
+	border-radius: 50%;
+	margin-right: 3.4rem;
+}
+
+.card-user-name{
+	font-size: 1.8rem;
+	font-weight: $extraBold;
+	color: $darkGrey;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+.card-user-status{
+	font-size: 1.4rem;
+	color: $darkGrey;
+}
+
+.card-user-row{
+	display: flex;
+	align-items: center;
+}
+
+.card-user-details{
+	margin-top: 6rem;
+	margin-left: 10.4rem;
+	max-width: 60%;
+	&__title{
+		display: block;
+		color: $grey;
+		font-size: 1.4rem;
+		font-weight: $extraBold;
+	}
+	&__value{
+		display: block;
+		color: $grey;
+		font-size: 1.4rem;
+	}
+}
+
+.active-status{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	span{
+		display: block;
+		margin-top: 1.6rem;
+	}
+}
+
+.card-user-right-col{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.btn-card-user{
+	min-width: 27rem;
+	margin: 4rem auto 0;
+}
+
+/*pagination*/
+.pagination{
+	margin-top: 8rem;
+	margin-bottom: 6rem;
+	display: flex;
+	justify-content: center;
+	.page-number{
+		width: 8rem;
+		height: 8rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		font-weight: $extraBold;
+		font-size: 1.6rem;
+		margin-left: 1.7rem;
+		margin-right: 1.7rem;
+		color: $primary;
+		&:not(.next):not(.prev):not(.dots):not(.current) {
+			border: 5px solid $primary;
+		}
+		&.next, &.prev{
+			text-transform: uppercase;
+		}
+		&:not(.dots):hover{
+		}
+		&.dots{
+			margin-left: 0;
+			margin-right: 0;
+			width: 6rem;
+		}
+		&.current {
+			border: 5px solid $grey;
+			color: $grey;
+		}
+	}
+
+}
+
+.row-desc{
+	display: flex;
+	margin-top: 8rem;
+	margin-bottom: 4rem;
+	.icon{
+		margin-top: .5rem;
+		margin-right: 6rem;
+		width: 5.5rem;
+		height: 5.5rem;
+		fill: $primary;
+	}
+	p{
+		font-style: italic;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}

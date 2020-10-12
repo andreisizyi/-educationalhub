@@ -1,0 +1,423 @@
+@media(max-width: 640px){
+	.header{
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.wrap{
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	h1, .like-h1{
+		font-size: 3rem;
+	}
+
+	h2, .like-h2{
+		font-size: 2.4rem;
+	}
+
+	h3, .like-h3{
+		font-size: 2rem;
+	}
+
+	.btn:not(.btn-close):not(.btn-menu){
+		padding: 1.2rem 1.5rem;
+		font-size: 1.2rem;
+		min-width: auto;
+	}
+
+	.btn-with-icon{
+		.icon{
+			width: 2.5rem;
+			height: 2.5rem;
+		}
+		span{
+			margin-left: 1rem;
+		}
+	}
+
+	.btn-menu{
+		padding: 0;
+		.menu-name{
+			display: none;
+		}
+	}
+
+	.main-menu{
+		margin-top: 2rem;
+	}
+
+	.menu{
+		padding-bottom: 4rem;
+	}
+
+	.menu-buttons{
+		margin-top: 5rem;
+		flex-direction: column-reverse;
+		align-items: flex-end;
+		.btn-light-tr{
+			margin-top: 1.5rem;
+			margin-right: 0;
+			padding: 0;
+		}
+	}
+
+	.breadcrumb-item{
+		span{
+			font-size: 1.2rem;
+			margin-left: .5rem;
+		}
+	}
+
+	.page-title{
+		padding-top: 13rem;
+		padding-bottom: 4rem;
+	}
+
+	.page-content {
+		margin-top: 4rem;
+		margin-bottom: 6rem;
+	}
+
+	.card-full{
+		height: 30rem;
+		padding: 3.5rem 2rem;
+		.card-btn{
+			bottom: 0;
+		}
+	}
+
+	.card-title{
+		margin-top: 0;
+		max-height: 5.4rem;
+	}
+
+	.cards-section{
+		padding-bottom: 10rem;
+	}
+
+
+	.page-title-lg{
+		padding-top: 18rem;
+		padding-bottom: 12rem;
+	}
+
+	.page-title-bottom{
+		padding-bottom: 17rem;
+	}
+
+	.page-title{
+		.info-item{
+			display: block;
+		}
+	}
+
+	.title-btn{
+		margin-top: 5rem;
+	}
+
+	.anchor-menu{
+		margin-left: -2rem;
+		margin-right: -2rem;
+		li{
+			a{
+				margin-right: 2rem;
+				margin-left: 2rem;
+			}
+		}
+	}
+
+	.counter-item{
+		text-align: center;
+		margin-bottom: 3.5rem;
+		.caption{
+			max-width: none;
+		}
+		.counter-title{
+			margin-bottom: 1rem;
+		}
+	}
+
+	.card-thin-amount::after{
+		left: 2.2rem;
+		width: .5rem;
+	}
+
+	.card-type .round{
+		width: 3rem;
+		height: 3rem;
+		border-width: 3px;
+		left: 1rem;
+	}
+
+	.completed .card-type .round, .in-process .card-type .round{
+		width: 5rem;
+		height: 5rem;
+		border-width: 3px;
+		left: 0;
+	}
+
+	.completed .card-type .round{
+		.icon{
+			width: 2.5rem;
+			height: 2.5rem;
+		}
+	}
+
+	.card-thin-amount{
+		margin-top: 5rem;
+	}
+
+	.card-thin{
+		margin-left: 2.2rem;
+		align-items: flex-start;
+		padding: 3rem 2rem 3rem 3rem;
+		height: 33rem;
+		.card-title{
+			margin-bottom: 1.4rem;
+		}
+		&::before{
+			width: .5rem;
+		}
+		.btn-light{
+			position: absolute;
+			bottom: 4rem;
+		}
+	}
+
+	.info-values{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		.info-item{
+			margin-bottom: 1.4rem;
+		}
+	}
+
+	.card-thin-row{
+		margin-top: 2rem;
+		margin-bottom: 5rem;
+	}
+
+	.author-row{
+		text-align: center;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 5rem;
+		margin-bottom: 5rem;
+		.soc-links{
+			justify-content: center;
+			margin-bottom: 1rem;
+			li a .icon{
+				width: 3rem;
+				height: 3rem;
+			}
+		}
+	}
+
+	.btn-expand{
+		font-size: 1.2rem;
+	}
+
+
+	.video-section{
+		margin-top: -16rem;
+	}
+
+	.video-block{
+		padding: 1rem;
+		.video-inner{
+			height: 38rem;
+		}
+	}
+
+	.show-video .video-modal .video{
+		.btn-close{
+			top: 5rem;
+			right: 1rem;
+			width: 4rem;
+			height: 4rem;
+			.icon{
+				width: 2rem;
+				height: 2rem;
+			}
+		}
+	}
+
+	.card-video .video-placeholder .btn-play .icon{
+		width: 4rem;
+		height: 4rem;
+	}
+
+
+	.person-page-title{
+		.person-img{
+			width: 14.4rem;
+			height: 15.4rem;
+			margin: auto;
+			&::after{
+				border-width: 10px;
+			}
+		}
+		h1{
+			text-align: center;
+		}
+		.status, .soc-links{
+			justify-content: center;
+			li a .icon{
+				width: 2.5rem;
+				height: 2.5rem;
+			}
+		}
+	}
+
+	.cards-amount{
+		margin-top: 5rem;
+	}
+
+	.test-block{
+		.btn{
+			padding: 1rem 4rem;
+		}
+	}
+
+	.title-with-info .info .icon{
+		margin-top: 1.7rem;
+	}
+
+	.page-title-bottom-md{
+		padding-bottom: 13rem;
+	}
+
+	.blog-latest{
+		padding-top: 4rem;
+		padding-bottom: 6rem;
+		.news-amount {
+			margin-top: 4rem;
+			margin-bottom: 4rem;
+		}
+	}
+
+	.news-main-image {
+    	height: 34rem;
+    	&::after{
+    		border-width: 1rem;
+    	}
+	}
+
+	.log-section{
+		margin-top: 3rem;
+		margin-bottom: 5rem;
+		.label-text{
+			width: 100%;
+		}
+		.btns-row{
+			margin-top: 4rem;
+		}
+	}
+
+	.btns-row{
+		.btn{
+			width: 100%;
+			margin-bottom: 1rem;
+		}
+	}
+
+	.btns-add{
+		.btn{
+			display: block;
+			width: 100%;
+			margin-left: 0;
+		}
+	}
+
+	.separator{
+		span{
+			margin-right: 0;
+			width: 12rem;
+			text-align: center;
+			margin: auto;
+			height: auto;
+			line-height: 2rem;
+			margin-top: 5rem;
+			margin-bottom: 5rem;
+		}
+		&::before{
+			left: 0;
+			height: 1px;
+			width: 100%;
+			top: 50%;
+			bottom: auto;
+		}
+	}
+
+	.data-block{
+		margin-top: 0;
+		margin-bottom: 7rem;
+		.like-h4{
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+		}
+		.btn-save{
+			margin-top: 2.5rem;
+			width: 100%;
+		}
+		.fixed-info{
+			.btn-edit{
+				padding: 0;
+			}
+		}
+	}
+
+	.page-title-desc{
+		margin-top: 4rem;
+		margin-bottom: 4rem;
+		&, span{
+			font-size: 1.2rem;
+		}
+	}
+
+	.page-title-btns{
+		.btn, .btn-light{
+			margin-bottom: 1rem;
+		}
+	}
+
+	.desc-item{
+		margin-bottom: 3rem;
+		.icon{
+			margin-bottom: 1rem;
+		}
+	}
+
+	.section-pd-lg {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+		.footnote, .wrap-sm > .text{
+			margin-left: 0;
+		}
+	}
+
+	.footnote{
+		margin-top: 3rem;
+		.text, a{
+			font-size: 1.2rem;
+		}
+	}
+
+	.card-full-light{
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		height: 30rem;
+	}
+
+
+
+	.to-video{
+		+ .buttons{
+
+			margin-bottom: 0rem;
+		}
+	}
+	
+}

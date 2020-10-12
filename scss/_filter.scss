@@ -1,0 +1,131 @@
+.filter{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100%;
+	z-index: 50;
+	background-color: $primary;
+	-webkit-overflow-scrolling: touch;
+	transform: translateY(-100%);
+	transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+	&.filter-open{
+		transform: translateY(0%);
+	}
+}
+
+.filter-inner{
+	position: relative;
+	margin-top: 10rem;
+	margin-bottom: 10rem;
+	border: 5px solid $secondary;
+	padding: 5.6rem 15.6rem;
+	box-shadow: 0 18px 31px rgba(0,0,0,.16);
+	transition: all .8s ease-in-out;
+}
+
+.btn-filter-close{
+	position: absolute;
+	top: 5.6rem;
+	right: 12rem;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	width: 5rem;
+	height: 5rem;
+	padding: 0;
+	cursor: pointer;
+	.icon{
+		width: 3rem;
+		height: 3rem;
+		fill:#fff;
+	}
+}
+
+.filter-title{
+	display: flex;
+	justify-content: baseline;
+	.title{
+		display: block;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		color: $secondary;
+		font-size: 3rem;
+		font-weight: $extraBold;
+	}
+}
+
+.btn-link{
+	text-transform: none;
+	text-decoration: underline;
+	font-weight: $regular;
+	min-width: auto;
+	padding-left: .5rem;
+	padding-right: .5rem;	
+	margin-left: 7rem;
+}
+
+.filter-row{
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	.checkbox, .radio{
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+	}
+}
+
+.filter-types{
+	 list-style-type: none;
+	 margin: 0;
+	 padding: 0;
+	 li{
+	 	margin-top: 3rem;
+	 	margin-bottom: 3rem;
+	 	a, span{
+	 		text-transform: uppercase;
+	 		font-size: 1.6rem;
+	 		font-weight: $extraBold;
+	 	}
+	 	a{
+	 		text-decoration: none;
+	 		color: #fff;
+	 		&.choosed-filter-tab{
+	 			color: rgba(255,255,255,.5);
+	 		}
+	 	}
+	 	span{
+	 		color: $grey;
+	 	}
+	 }
+}
+
+.after-line{
+	position: relative;
+	&::after{
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 1px;
+		background-color: #fff;
+		display: block;
+	}
+}
+
+
+.filters-array{
+	opacity: 0;
+	visibility: hidden;
+	max-height: 0;
+	overflow: hidden;
+	transform: translateY(10%);
+	transition: all .4s ease-in-out;
+	&.choosed-filter{
+		opacity: 1;
+		visibility: visible;
+		max-height: 500rem;
+		transform: translateY(0);	
+		transition: all .4s .4s ease-in-out;
+	}
+}

@@ -1,0 +1,318 @@
+.main{
+	position: relative;
+}
+.sticky-menu{
+	margin-top: -20rem;
+	position: sticky;
+	top: 2rem;
+	background-color: #fff;
+	width: 42rem;
+	padding: 4rem 6.5rem 2rem;
+	border: .5rem solid $primary;
+	margin-left: auto;
+	.btn{
+		display: block;
+		margin: 5rem auto 1rem;
+	}
+}
+
+.sticky-menu-list{
+	margin: 0;
+	padding: 0;
+	li{
+		display: flex;
+		align-items: baseline;
+		counter-increment: section;
+		margin-top: .5rem;
+		margin-bottom: .5rem;
+		color: $primary;
+		
+		a{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: baseline;
+			text-decoration: none;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			color: $primary;
+			&::before{
+				content: counter(section)'.';
+				font-family: $font;
+				font-size: 1.6rem;
+				font-weight: $extraBold;
+				margin-right: .5rem;
+			}
+			& *{
+				color: $primary;
+			}
+		}
+		&.active{
+			color: $grey;
+			a,  a *{
+				color: $grey;
+			}
+			.sticky-menu-desc{
+				margin-top: 1rem;
+				margin-bottom: 1rem;
+				opacity: 1;
+				visibility: visible;
+				max-height: 20rem;
+				font-size: 1.2rem;
+				transition: opacity .4s .5s ease-in-out,
+							visibility .4s .5s ease-in-out,
+							max-height .4s ease-in-out, 
+							margin .4s ease-in-out;
+			}
+		}
+	}
+}
+
+.sticky-menu-title{
+	display: block;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	font-weight: $extraBold;
+}
+
+.sticky-menu-desc{
+	display: block;
+	width: 100%;
+	font-size: 0;
+	opacity: 0;
+	visibility: hidden;
+	max-height: 0;
+	margin-top: 0;
+	margin-left: 2rem;
+	margin-bottom: 0;
+	transition: opacity .4s ease-in-out,
+				visibility .4s ease-in-out,
+				max-height .4s .5s ease-in-out, 
+				margin .4s .5s ease-in-out;
+}
+
+.data-block{
+	margin-top: 2rem;
+	margin-bottom: 14rem;
+	max-width: 42rem;
+	.like-h4{
+		margin-top: 3rem;
+		margin-bottom: 6rem;
+	}
+	.btn-save{
+		display: block;
+		margin-top: 6rem;
+	}
+	.add-more{
+		padding: 0;
+		margin-left: auto;
+		display: block;
+		min-width: auto;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	.label-text{
+		display: block;
+		width: 100%;
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+	.label-select{
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		width: 100%;
+		.select{
+			width: 100%;
+		}
+	}
+	.choose-items{
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		.radio{
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+		}
+	}
+}
+
+.label-image{
+	width: 27rem;
+	height: 30rem;
+	border: 5px dashed $secondary;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 4rem;
+	cursor: pointer;
+	.input-file{
+		display: none;
+	}
+	.icon{
+		width: 7rem;
+		height: 7rem;
+		fill: $primary;
+	}
+	.text{
+		font-size: 1.4rem;
+		font-weight: $extraBold;
+		margin-top: 3.5rem;
+		color: $primary;
+	}
+}
+
+
+/*datepicker*/
+.pika-single{
+	margin-top: 2.4rem;
+	box-shadow: none;
+	border: 3px solid $darkGrey;
+	font-family: $font;
+}
+
+.pika-lendar{
+	width: 36.2rem;
+	margin: 1.6rem;
+}
+
+.pika-table th{
+	color: $darkGrey;
+	font-weight: $extraBold;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #ADADAD;
+	abbr[title]{
+		text-decoration: none;
+	}
+}
+
+.pika-button{
+	font-weight: $regular;
+	background-color: #fff;
+	border-bottom: 1px solid #ADADAD;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	text-align: center;
+}
+
+.pika-label{
+	font-size: 1.8rem;
+	line-height: 2.4rem;
+}
+
+.is-today .pika-button{
+	color: $secondary;
+}
+
+.pika-button:hover, .pika-row.pick-whole-week:hover .pika-button{
+	border-radius: 0;
+	background-color: $primary;
+}
+
+
+.btn-edit{
+	width: 2.5rem;
+	height: 2.5rem;
+	line-height: 0;
+	line-height: 1;
+	padding: 0;
+	min-width: auto;
+	border: none;
+	cursor: pointer;
+	.icon{
+		width: 2.2rem;
+		height: 2.2rem;
+		fill: #fff;
+	}
+	&:not(:disabled):hover,
+	&:not(:disabled).active,
+	&:not(:disabled):focus{
+		.icon{
+			fill: #fff;
+		}
+	}
+}
+
+
+
+/*fixed saved info*/
+.fixed-info{
+	position: relative;
+	background-color: $primary;
+	width: 42rem;
+	max-width: 100%;
+	padding: 6rem 4.5rem 5rem;
+	.btn-edit{
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+}
+
+.fixed-info-data{
+	.datatype-icon{
+		fill: $secondary;
+		width: 5rem;
+		height: 5rem;
+	}
+	.data-title{
+		color: $secondary;
+	}
+	.text{
+		color: #fff;
+		display: block;
+	}
+}
+
+.network-array{
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.label-network{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 100%;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.network-name{
+	display: flex;
+	align-items: center;
+	.icon{
+		width: 3rem;
+		height: 3rem;
+	}
+	span{
+		font-weight: $extraBold;
+		display: block;
+		margin-left: 2rem;
+	}
+}
+
+.network-add{
+	display: flex;
+	align-items: center;
+	span{
+		color: $primary;
+	}
+	.btn-close{
+		padding: 0;
+		width: 2.5rem;
+		height: 2.5rem;
+		border: none;
+		display: block;
+		margin-left: 1rem;
+		.icon{
+			width: 1.5rem;
+			height: 1.5rem;
+			fill: #000;
+		}
+	}
+	.btn-tr{
+		padding: 0;
+		min-width: auto;
+	}
+}
+

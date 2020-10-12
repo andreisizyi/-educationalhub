@@ -1,0 +1,20 @@
+#popup {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,81,101,.98);
+    z-index: 9999;
+    h2 {
+        margin-bottom: 30px;
+    }
+    #input_area {
+        margin: -5px;
+    }
+    button {
+        margin: 5px;
+    }
+}
